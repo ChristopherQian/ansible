@@ -1,5 +1,5 @@
 - name: ping
-  hosts: 10.10.188.131
+  hosts: 10.10.141.224
   tasks:
         - name: test connection
           ping:
