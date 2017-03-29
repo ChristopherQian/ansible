@@ -1,5 +1,5 @@
 - name: ping
-  hosts: 10.10.141.224
+  hosts: all
   remote_user: root
   tasks:
         - name: test connection
