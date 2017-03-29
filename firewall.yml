@@ -1,0 +1,9 @@
+- name: firewall
+  hosts: "{{ host }}"
+  remote_user: root
+  tasks:
+        - name: add port
+          shell: systemctl start firewalld.service 
+        - shell: firewall-cmd --zone=public --add-port=10050/tcp --permanent
+        - shell: firewall-cmd --reload
+

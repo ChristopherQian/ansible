@@ -1,5 +1,5 @@
----
- task:
-  - name: test connection
-    ping:
+- name: ping
+   task:
+        - name: test connection
+          ping:
     
